@@ -4,12 +4,146 @@
     box-sizing: border-box;
   }
 
-
-li {
-    display: inline;
+body {
+    background: #f5f5f5;
+    
 }
 
-.small-logo {
-    width: 10%;
-    height: auto;
+main {
+    margin: 30px 8%;
+  }
+
+#nav-bar {
+    width: 100%;
+    height: 80px;
+    background: #6A7B8B;
 }
+
+#nav-bar > a {
+    vertical-align: top;
+    margin-right: 20px;
+    margin-left: 20px;
+    line-height: 80px;
+    float: right;
+    color: #fafafa;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+  #nav-logo {
+      display: inline-block;
+      vertical-align: top;
+      width: 157px;
+      height: 56px;
+      margin-left: 41px;
+      margin-top: 13px;
+      max-width: 100%;
+      height: auto;
+  }
+
+  #top-logo {
+      display: block;
+      width: 207px 100%;
+      height: 207px;
+      margin-left: auto;
+      margin-right: auto;  
+  }
+
+  #home-image {
+      
+      background-image: url("./Assets/mr_coffee_salle.jpg");
+      background-size: cover;
+      width: 1247px 100%;
+      height: 795px;
+      margin-top: -90px;
+      
+  }
+
+  #home-image h1 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    top: 100px;
+    position: relative;
+    margin: 80px;
+    text-align: center;
+    color: #F1F3F5;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+      
+  }
+
+  #second-section-title h2 {
+      height: 122px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 40px;
+      line-height: 55px;
+      color: #5C5B5B;
+      margin-top: 50px;
+  }
+
+#three-cards{
+    background-color: #6A7B8B;
+}
+
+.card-icon {
+    width: 122px;
+    height: 122px;
+    
+}
+
+
+.class-background {
+    width: 386px;
+    height: 418px;
+    background-color: #6A7B8B;
+    
+}
+
+
+#footer-content {
+    width: 100%;
+    height: 142px;
+    background: #6A7B8B;
+}
+
+#small-logo-footer {
+   display: inline-block;
+   vertical-align: top;
+   width: 53px 100%;
+   height: 78px;
+   margin-left: 50px;
+   margin-top: 32px;   
+}
+
+.social-icons {
+   vertical-align: top;
+   width: 28px;
+   height: 28px;
+   margin-top: 78px;
+   text-align: center;
+   
+}
+
+#footer-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+   
+}
+
+.icons {
+    display: inline-block;
+    text-align: center;
+    align-content: space-between;
+    margin-left: 420px;
+    
+}
+
+
+
+

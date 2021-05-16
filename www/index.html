@@ -5,24 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet"  href="application.css">
+    <link rel="stylesheet"  href="./application.css">
 </head>
 <body>
  
     <header> 
-        <nav> <!-- NAV BAR AND MINI LOGO AT TOP LEFT CORNER-->
-            <div>
-                <ul>
-                    <li><img class="small-logo" src="Assets/full_logo_white.png " alt="a white small logo with text saying mr.coffee"></li>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html">Qui sommes-nous?</a></li>
-                    <li><a href="contact.html">Nous contacter</a></li>
-                </ul>
-            </div>
+        <nav id="nav-bar"> <!-- NAV BAR AND MINI LOGO AT TOP LEFT CORNER-->
+            <img id="nav-logo" src="Assets/full_logo_white.png " alt="a white small logo with text saying mr.coffee">    
+                <a href="index.html">Accueil</a>
+                <a href="about.html">Qui sommes-nous?</a>
+                <a href="contact.html">Nous contacter</a>         
         </nav>
 
-        <div class="main-logo"> <!-- DARK LOGO CENTRALIZED IN ALL PAGES-->
-            <img src="Assets/logo_mrcoffee.png" alt="a mr.coffee dark logo">
+        <div> <!-- DARK LOGO CENTRALIZED IN ALL PAGES-->
+            <img id="top-logo" src="Assets/logo_mrcoffee.png" alt="a mr.coffee dark logo">
         </div>
     </header>
 
@@ -31,19 +27,18 @@
 
     <main>
         
-        <section class="home-image"> <!-- HERO IMAGE WITH CENTRALIZED TITLE IN WHITE-->
-            <img src="Assets/mr_coffee_salle.jpg" alt="A cafeteria with plenty of natural lighting and some pendant lamps in green. The space is filled with furniture in green tone in an industrial style, some bookcases displaying crockery and other decorations. The space has many customers comfortably talking to each other and enjoying the moment.">
+        <section id="home-image" alt="A cafeteria with plenty of natural lighting and some pendant lamps in green. The space is filled with furniture in green tone in an industrial style, some bookcases displaying crockery and other decorations. The space has many customers comfortably talking to each other and enjoying the moment."> <!-- HERO IMAGE WITH CENTRALIZED TITLE IN WHITE-->
             <h1>Découvrez Notre Café Philo</h1>
         </section>
 
-        <section> <!-- DARK SUBTITLE CENTRALIZED BELOW HERO IMAGE-->
+        <section id="second-section-title"> <!-- DARK SUBTITLE CENTRALIZED BELOW HERO IMAGE-->
             <h2>Chez Mr.Coffee,<br>nous aimons trois choses</h2>
         </section>
 
-        <section class="cards"> <!-- 3 CARDS ALIGNED SIDE BY SIDE -->
-             <div>
-                <img src="Assets/icon_cafe.png" alt="white coffee cup icon">
-                    <h3>Le bon café</h3>
+        <section id="three-cards"> <!-- 3 CARDS ALIGNED SIDE BY SIDE -->
+             <div class="card-background">
+                <img class="card-icon" src="Assets/icon_cafe.png" alt="white coffee cup icon">
+                    <h3 class="card-title">Le bon café</h3>
                         <p>Nos priorités : la qualité et le goût.
                         Tous nos cafés sont soigneusements
                         séléctionnés en accord avec nos
@@ -51,9 +46,9 @@
                         hommes.</p>
             </div>
 
-            <div>
-                <img src="Assets/icon_gens.png" alt="white hands with a heart in between icon">
-                    <h3>Les gens</h3>
+            <div class="card-background">
+                <img class="card-icon" src="Assets/icon_gens.png" alt="white hands with a heart in between icon">
+                    <h3 class="card-title">Les gens</h3>
                         <p>Nous sommes de ceux qui pensent
                         qu’ensemble, nous allons plus loin.
                         C’est pourquoi chez Mr.Coffee, notre
@@ -62,33 +57,35 @@
                         partages.</p>
             </div>
 
-            <div>
-                <img src="Assets/icon_histoires.png" alt="white opened book with a floating heart above icon">
-                    <h3>Les histoires</h3>
+            <div class="card-background">
+                <img class="card-icon" src="Assets/icon_histoires.png" alt="white opened book with a floating heart above icon">
+                    <h3 class="card-title">Les histoires</h3>
                         <p>Chez Mr.Coffee, que vous soyez
                         poête, fantasque ou philosophe, nous
                         vous offrons un lieu pour parler de
                         vos histoires, ou pour les écrire. </p>
             </div>
 
-            <div>
+            
+            
+        </section>
+
+        <section>
             <button>En Savoir plus</button>
-            </div>
         </section>
 
         <section> <!-- ACTIVITIES AND OTHER STUFF CAFE OFFERS-->
-                <div>
+               
                     <h2>Découvrez notre progamme</h2>
-                </div>
-
+                
                 <div>
                     <ul>
                         <li><img class="open-logo" src="Assets/icon_open.png " alt="a blue and white hanging sign that says open"></li>
-                        <li><h3>Votre café vous accueille 7j/7 :</h3></li>
+                        <li><p><b>Votre café vous accueille 7j/7 :</b></p></li>
                     </ul>
                 </div>
 
-                <div>
+                <div id="first-column" class="columns">
                     <div>
                         <p>Tous les mardis,<br>retrouvez <b>les cafés poésies :</b></p>
                     </div>
@@ -97,7 +94,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div id="second-column" class="columns">
                     <div>
                         <p><b>Venez écouter ou lire vos plus beaux<br>poèmes : Mr.Coffee offre une<br>consommation à tous les courageux !</b></p>
                     </div>
@@ -111,7 +108,7 @@
                 </div>
         </section>
 
-        <section> <!-- Lest sentence before footer-->
+        <section> <!-- Last sentence before footer-->
             <h3>Rendez-vous sur notre page Contact pour retrouver toutes les infos pratiques</h3>
         </section>
 
@@ -120,18 +117,16 @@
 
 
 
-    <footer> 
+    <footer id="footer-content"> 
+             <h2 id="footer-title">Suivez nous sur les réseaux sociaux !</h2>
+                <img id="small-logo-footer" src="Assets/logo_blanc.png " alt="a white mr.coffee small logo without text">
 
-        <div>
-            <ul>
-                <li><img class="small-logo-footer" src="Assets/logo_blanc.png " alt="a white mr.coffee small logo without text"></li>
-                <li><a href="#home"><img src="Assets/logo_linkedin.png" alt="linkedin white logo"></a></li>
-                <li><a href="#contact"><img src="Assets/logo_twitter.png" alt="twitter white logo"></a></li>
-                <li><a href="#about"><img src="Assets/logo_facebook.png" alt="facebook white logo"></a></li>
-            </ul>
-            <h2>Suivez nous sur les réseaux sociaux !</h2>
-        </div>
 
+            <div class="icons">  
+                <img class="social-icons" src="Assets/logo_linkedin.png" alt="linkedin white logo">    
+                <img class="social-icons" src="Assets/logo_twitter.png" alt="twitter white logo">     
+                <img class="social-icons" src="Assets/logo_facebook.png" alt="facebook white logo">
+            </div>     
     </footer>
     
 </body>
